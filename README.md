@@ -25,13 +25,19 @@ A comprehensive PHP-based web application for reporting and browsing scam report
 - Access comprehensive admin dashboard
 - View system statistics
 
-## Technology Stack
+## 🧰 Technology Stack
 
 - **Backend**: PHP 7.4+
-- **Database**: MySQL 5.7+
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Framework**: Bootstrap 5.1.3
-- **Icons**: Font Awesome 6.0.0
+- **Frontend**: HTML5, CSS3, JavaScript  
+- **Framework**: Bootstrap 5.1.3  
+- **Icons**: Font Awesome 6.0.0  
+
+### ☁️ Cloud & AWS Services
+- **Storage**: :contentReference[oaicite:0]{index=0} (file uploads & evidence storage)
+- **Database**: :contentReference[oaicite:1]{index=1} (metadata storage)
+- **Notifications**: :contentReference[oaicite:2]{index=2} (email alerts to moderators)
+- **Monitoring**: :contentReference[oaicite:3]{index=3} (logs & performance tracking)
+- **Deployment**: :contentReference[oaicite:4]{index=4} (application hosting)
 
 ## Installation Instructions
 
