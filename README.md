@@ -33,11 +33,11 @@ A comprehensive PHP-based web application for reporting and browsing scam report
 - **Icons**: Font Awesome 6.0.0  
 
 ### ☁️ Cloud & AWS Services
-- **Storage**: :contentReference[oaicite:0]{index=0} (file uploads & evidence storage)
-- **Database**: :contentReference[oaicite:1]{index=1} (metadata storage)
-- **Notifications**: :contentReference[oaicite:2]{index=2} (email alerts to moderators)
-- **Monitoring**: :contentReference[oaicite:3]{index=3} (logs & performance tracking)
-- **Deployment**: :contentReference[oaicite:4]{index=4} (application hosting)
+- **Storage**: S3 Bucket
+- **Database**: :Dyanamo DB
+- **Notifications**: :AWS SNS
+- **Monitoring**: AWS CloudWatch
+- **Deployment**: AWS BeanStalk
 
 ## Installation Instructions
 
@@ -191,30 +191,6 @@ ddac-website/
    - Review pending report submissions
    - Approve legitimate reports for public viewing
    - Reject inappropriate or false reports
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Database Connection Error**
-   - Check MySQL server is running
-   - Verify database credentials in `config/database.php`
-   - Ensure database exists and schema is imported
-
-2. **Page Not Found (404)**
-   - Check web server is running
-   - Verify project is in correct directory
-   - Check file permissions
-
-3. **Login Issues**
-   - Verify admin credentials: admin/admin123
-   - Check if user account is active (not suspended)
-   - Clear browser cache and cookies
-
-4. **Report Submission Issues**
-   - Ensure user is logged in
-   - Check all required fields are filled
-   - Verify CSRF token is being generated
 
 ### Development Notes
 
